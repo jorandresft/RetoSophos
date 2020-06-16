@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Realizar compra" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-06-16T02:16:03" hostname="MSI" time="68.816">
+  <properties/>
+  <testcase name="Realizar compra" classname="Realizar compra" time="68.816">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expected: &quot;Videojuego Days Gone&quot;&#13;&#10;     but: was &quot;PS4 Videojuego Days Gone&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &quot;Videojuego Days Gone&quot;
+     but: was &quot;PS4 Videojuego Days Gone&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at com.sophossolutions.www.steps.RealizarCompraMetroStepDefinition.validoQueElProductoFueAgregadoExitosamente(RealizarCompraMetroStepDefinition.java:45)
+	at ✽.Valido que el producto fue agregado exitosamente &quot;Videojuego Days Gone&quot;(src/test/resources/com.sophossolutions.www.features/realizar_compra_metro.feature:7)
+</failure>
+  </testcase>
+  <system-out><![CDATA[    Given Necesito realizar una compra                                           # RealizarCompraMetroStepDefinition.necesitoRealizarUnaCompra()
+    When Selecciono el producto "PS4 Videojuego Days Gone"                       # RealizarCompraMetroStepDefinition.seleccionoElProducto(String)
+    Then Valido que el producto fue agregado exitosamente "Videojuego Days Gone" # RealizarCompraMetroStepDefinition.validoQueElProductoFueAgregadoExitosamente(String)
+      java.lang.AssertionError: 
+Expected: "Videojuego Days Gone"
+     but: was "PS4 Videojuego Days Gone"
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at com.sophossolutions.www.steps.RealizarCompraMetroStepDefinition.validoQueElProductoFueAgregadoExitosamente(RealizarCompraMetroStepDefinition.java:45)
+	at ?.Valido que el producto fue agregado exitosamente "Videojuego Days Gone"(src/test/resources/com.sophossolutions.www.features/realizar_compra_metro.feature:7)
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1959f6f9
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@59020ab0
+jun 15, 2020 9:16:04 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 3529
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+jun 15, 2020 9:16:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4562a041
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@13668e12
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@60696114
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro], When Selecciono el producto "PS4 Videojuego Days Gone" [Practica buscar producto [Practica enters 'PS4 Videojuego Days Gone' into Input busqueda]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@78a60312
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro], When Selecciono el producto "PS4 Videojuego Days Gone" [Practica buscar producto [Practica enters 'PS4 Videojuego Days Gone' into Input busqueda, Practica types 'ENTER' in Input busqueda]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro], When Selecciono el producto "PS4 Videojuego Days Gone" [Practica buscar producto [Practica enters 'PS4 Videojuego Days Gone' into Input busqueda, Practica types 'ENTER' in Input busqueda]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4854f772
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@78d43854
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro], When Selecciono el producto "PS4 Videojuego Days Gone" [Practica buscar producto [Practica enters 'PS4 Videojuego Days Gone' into Input busqueda, Practica types 'ENTER' in Input busqueda], Practica seleccionar producto [Practica clicks on Boton no gracias]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@52d40b3d
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro], When Selecciono el producto "PS4 Videojuego Days Gone" [Practica buscar producto [Practica enters 'PS4 Videojuego Days Gone' into Input busqueda, Practica types 'ENTER' in Input busqueda], Practica seleccionar producto [Practica clicks on Boton no gracias, Practica clicks on Boton agregar]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3f5c5b03
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro], When Selecciono el producto "PS4 Videojuego Days Gone" [Practica buscar producto [Practica enters 'PS4 Videojuego Days Gone' into Input busqueda, Practica types 'ENTER' in Input busqueda], Practica seleccionar producto [Practica clicks on Boton no gracias, Practica clicks on Boton agregar, Practica clicks on Boton Ir a carrito]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@77719557
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro], When Selecciono el producto "PS4 Videojuego Days Gone" [Practica buscar producto [Practica enters 'PS4 Videojuego Days Gone' into Input busqueda, Practica types 'ENTER' in Input busqueda], Practica seleccionar producto [Practica clicks on Boton no gracias, Practica clicks on Boton agregar, Practica clicks on Boton Ir a carrito, Practica clicks on Boton ver carrito]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro], When Selecciono el producto "PS4 Videojuego Days Gone" [Practica buscar producto [Practica enters 'PS4 Videojuego Days Gone' into Input busqueda, Practica types 'ENTER' in Input busqueda], Practica seleccionar producto [Practica clicks on Boton no gracias, Practica clicks on Boton agregar, Practica clicks on Boton Ir a carrito, Practica clicks on Boton ver carrito]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro], When Selecciono el producto "PS4 Videojuego Days Gone" [Practica buscar producto [Practica enters 'PS4 Videojuego Days Gone' into Input busqueda, Practica types 'ENTER' in Input busqueda], Practica seleccionar producto [Practica clicks on Boton no gracias, Practica clicks on Boton agregar, Practica clicks on Boton Ir a carrito, Practica clicks on Boton ver carrito]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@72789855
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@65f105b8
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro], When Selecciono el producto "PS4 Videojuego Days Gone" [Practica buscar producto [Practica enters 'PS4 Videojuego Days Gone' into Input busqueda, Practica types 'ENTER' in Input busqueda], Practica seleccionar producto [Practica clicks on Boton no gracias, Practica clicks on Boton agregar, Practica clicks on Boton Ir a carrito, Practica clicks on Boton ver carrito]], Then Valido que el producto fue agregado exitosamente "Videojuego Days Gone" [Then validar producto should be 'Videojuego Days Gone']
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro], When Selecciono el producto "PS4 Videojuego Days Gone" [Practica buscar producto [Practica enters 'PS4 Videojuego Days Gone' into Input busqueda, Practica types 'ENTER' in Input busqueda], Practica seleccionar producto [Practica clicks on Boton no gracias, Practica clicks on Boton agregar, Practica clicks on Boton Ir a carrito, Practica clicks on Boton ver carrito]], Then Valido que el producto fue agregado exitosamente "Videojuego Days Gone" [Then validar producto should be 'Videojuego Days Gone']]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Realizar compra:Given Necesito realizar una compra [Practica opens the Home metro], When Selecciono el producto "PS4 Videojuego Days Gone" [Practica buscar producto [Practica enters 'PS4 Videojuego Days Gone' into Input busqueda, Practica types 'ENTER' in Input busqueda], Practica seleccionar producto [Practica clicks on Boton no gracias, Practica clicks on Boton agregar, Practica clicks on Boton Ir a carrito, Practica clicks on Boton ver carrito]], Then Valido que el producto fue agregado exitosamente "Videojuego Days Gone" [Then validar producto should be 'Videojuego Days Gone']]
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Realizar compra
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then validar producto should be 'Videojuego Days Gone'
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected: "Videojuego Days Gone" but: was "PS4 Videojuego Days Gone"
+]]></system-err>
+</testsuite>

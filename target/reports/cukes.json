@@ -6,186 +6,87 @@
         "before": [
           {
             "result": {
-              "duration": 49074300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GetRestPhostosStepDefinition.prepareStage()"
-            }
-          },
-          {
-            "result": {
-              "duration": 80296900,
+              "duration": 2343200,
               "status": "passed"
             },
             "match": {
               "location": "RealizarCompraMetroStepDefinition.prepareStage()"
             }
-          }
-        ],
-        "line": 12,
-        "name": "Consultar photos por id",
-        "description": "",
-        "id": "ejecutar-servicio-de-consulta-rest;consultar-photos-por-id;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 189348000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Necesito consultar una photo en \"https://gorest.co.in/public-api/photos/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://gorest.co.in/public-api/photos/",
-                  "offset": 33
-                }
-              ],
-              "location": "GetRestPhostosStepDefinition.necesitoConsultarUnaPhotoEn(String)"
-            },
-            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6798290000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "El id de la photo es 19",
-            "match": {
-              "arguments": [
-                {
-                  "val": "19",
-                  "offset": 21
-                }
-              ],
-              "location": "GetRestPhostosStepDefinition.elIdDeLaPhotoEs(int)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: 1 expectation failed.\nJSON path result.album_id doesn\u0027t match.\nExpected: 1533\n  Actual: 1532\n\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:301)\r\n\tat com.sophossolutions.www.steps.GetRestPhostosStepDefinition.validoElAlbumConIdYElTitleSea(GetRestPhostosStepDefinition.java:36)\r\n\tat ✽.Valido el album con id 1533 y el title sea \"Sit adipisci qui quibusdam quos provident eos error. Voluptas incidunt non aut consequatur.\"(src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:8)\r\n",
-              "duration": 975463200,
-              "status": "failed"
-            },
-            "line": 8,
-            "name": "Valido el album con id 1533 y el title sea \"Sit adipisci qui quibusdam quos provident eos error. Voluptas incidunt non aut consequatur.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1533",
-                  "offset": 23
-                },
-                {
-                  "val": "Sit adipisci qui quibusdam quos provident eos error. Voluptas incidunt non aut consequatur.",
-                  "offset": 44
-                }
-              ],
-              "location": "GetRestPhostosStepDefinition.validoElAlbumConIdYElTitleSea(int,String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1382500,
+              "duration": 1117000,
               "status": "passed"
             },
             "match": {
               "location": "GetRestPhostosStepDefinition.prepareStage()"
             }
-          },
-          {
-            "result": {
-              "duration": 5138400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "RealizarCompraMetroStepDefinition.prepareStage()"
-            }
           }
         ],
-        "line": 13,
-        "name": "Consultar photos por id",
+        "line": 4,
+        "name": "Realizar compra",
         "description": "",
-        "id": "ejecutar-servicio-de-consulta-rest;consultar-photos-por-id;;3",
+        "id": "realizar-compra;realizar-compra",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4018900,
+              "duration": 40702662900,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Necesito consultar una photo en \"https://gorest.co.in/public-api/photos/\"",
+            "line": 5,
+            "name": "Necesito realizar una compra",
             "match": {
-              "arguments": [
-                {
-                  "val": "https://gorest.co.in/public-api/photos/",
-                  "offset": 33
-                }
-              ],
-              "location": "GetRestPhostosStepDefinition.necesitoConsultarUnaPhotoEn(String)"
+              "location": "RealizarCompraMetroStepDefinition.necesitoRealizarUnaCompra()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1714428200,
+              "duration": 25590188700,
               "status": "passed"
             },
-            "line": 7,
-            "name": "El id de la photo es 55",
+            "line": 6,
+            "name": "Selecciono el producto \"PS4 Videojuego Days Gone\"",
             "match": {
               "arguments": [
                 {
-                  "val": "55",
-                  "offset": 21
+                  "val": "PS4 Videojuego Days Gone",
+                  "offset": 24
                 }
               ],
-              "location": "GetRestPhostosStepDefinition.elIdDeLaPhotoEs(int)"
+              "location": "RealizarCompraMetroStepDefinition.seleccionoElProducto(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: 1 expectation failed.\nJSON path result.title doesn\u0027t match.\nExpected: A Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim.\n  Actual: Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim.\n\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:301)\r\n\tat com.sophossolutions.www.steps.GetRestPhostosStepDefinition.validoElAlbumConIdYElTitleSea(GetRestPhostosStepDefinition.java:40)\r\n\tat ✽.Valido el album con id 1906 y el title sea \"A Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim.\"(src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:8)\r\n",
-              "duration": 50986800,
+              "error_message": "java.lang.AssertionError: \r\nExpected: \"Videojuego Days Gone\"\r\n     but: was \"PS4 Videojuego Days Gone\"\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:301)\r\n\tat com.sophossolutions.www.steps.RealizarCompraMetroStepDefinition.validoQueElProductoFueAgregadoExitosamente(RealizarCompraMetroStepDefinition.java:45)\r\n\tat ✽.Valido que el producto fue agregado exitosamente \"Videojuego Days Gone\"(src/test/resources/com.sophossolutions.www.features/realizar_compra_metro.feature:7)\r\n",
+              "duration": 1003995600,
               "status": "failed"
             },
-            "line": 8,
-            "name": "Valido el album con id 1906 y el title sea \"A Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim.\"",
+            "line": 7,
+            "name": "Valido que el producto fue agregado exitosamente \"Videojuego Days Gone\"",
             "match": {
               "arguments": [
                 {
-                  "val": "1906",
-                  "offset": 23
-                },
-                {
-                  "val": "A Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim.",
-                  "offset": 44
+                  "val": "Videojuego Days Gone",
+                  "offset": 50
                 }
               ],
-              "location": "GetRestPhostosStepDefinition.validoElAlbumConIdYElTitleSea(int,String)"
+              "location": "RealizarCompraMetroStepDefinition.validoQueElProductoFueAgregadoExitosamente(String)"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Ejecutar servicio de consulta Rest",
-    "description": "  Yo como usuario necesito realizar una consulta de un servicio Rest\n  para validar el contenido de la respuesta",
-    "id": "ejecutar-servicio-de-consulta-rest",
+    "name": "Realizar compra",
+    "description": "  Yo como usuario necesito realizar la compra de un producto",
+    "id": "realizar-compra",
     "keyword": "Feature",
-    "uri": "src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature",
+    "uri": "src/test/resources/com.sophossolutions.www.features/realizar_compra_metro.feature",
     "tags": []
   }
 ]

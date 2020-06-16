@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="com.sophossolutions.www.runners.GetRestPhotos" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="MSI" time="0.0">
   <properties/>
-  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@9d3291a
+  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@3bfeb54e
 Feature: Ejecutar servicio de consulta Rest
   Yo como usuario necesito realizar una consulta de un servicio Rest
   para validar el contenido de la respuesta
@@ -23,7 +23,7 @@ src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:13 #
 
 2 Scenarios (2 failed)
 6 Steps (2 failed, 4 passed)
-0m10,526s
+0m10,761s
 
 java.lang.AssertionError: 1 expectation failed.
 JSON path result.album_id doesn't match.
@@ -77,8 +77,8 @@ Expected: A Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostru
 
 TEST STARTED: Consultar photos por id
 -------------------------------------------------------------------(ejecutar-servicio-de-consulta-rest;consultar-photos-por-id)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6312ee51
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7efdf514
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3571589a
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@15ef4d6e
 [pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: com.sophosolutions.www.steps
 ]]></system-err>
 </testsuite>

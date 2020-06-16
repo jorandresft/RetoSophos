@@ -1,38 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="10.067184">
-<testcase classname="Ejecutar servicio de consulta Rest" name="Consultar photos por id" time="8.26661">
-<failure message="java.lang.AssertionError: 1 expectation failed.&#10;JSON path result.album_id doesn't match.&#10;Expected: 1533&#10;  Actual: 1532&#10;&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;&#10;&#9;at net.serenitybdd.screenplay.Actor.should(Actor.java:301)&#13;&#10;&#9;at com.sophossolutions.www.steps.GetRestPhostosStepDefinition.validoElAlbumConIdYElTitleSea(GetRestPhostosStepDefinition.java:36)&#13;&#10;&#9;at ✽.Valido el album con id 1533 y el title sea &quot;Sit adipisci qui quibusdam quos provident eos error. Voluptas incidunt non aut consequatur.&quot;(src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:8)&#13;&#10;"><![CDATA[Given Necesito consultar una photo en "https://gorest.co.in/public-api/photos/".passed
-When El id de la photo es 19................................................passed
-Then Valido el album con id 1533 y el title sea "Sit adipisci qui quibusdam quos provident eos error. Voluptas incidunt non aut consequatur.".failed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="67.387889">
+<testcase classname="Realizar compra" name="Realizar compra" time="67.387889">
+<failure message="java.lang.AssertionError: &#13;&#10;Expected: &quot;Videojuego Days Gone&quot;&#13;&#10;     but: was &quot;PS4 Videojuego Days Gone&quot;&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;&#10;&#9;at net.serenitybdd.screenplay.Actor.should(Actor.java:301)&#13;&#10;&#9;at com.sophossolutions.www.steps.RealizarCompraMetroStepDefinition.validoQueElProductoFueAgregadoExitosamente(RealizarCompraMetroStepDefinition.java:45)&#13;&#10;&#9;at ✽.Valido que el producto fue agregado exitosamente &quot;Videojuego Days Gone&quot;(src/test/resources/com.sophossolutions.www.features/realizar_compra_metro.feature:7)&#13;&#10;"><![CDATA[Given Necesito realizar una compra..........................................passed
+When Selecciono el producto "PS4 Videojuego Days Gone"......................passed
+Then Valido que el producto fue agregado exitosamente "Videojuego Days Gone".failed
 
 StackTrace:
-java.lang.AssertionError: 1 expectation failed.
-JSON path result.album_id doesn't match.
-Expected: 1533
-  Actual: 1532
-
+java.lang.AssertionError: 
+Expected: "Videojuego Days Gone"
+     but: was "PS4 Videojuego Days Gone"
 	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
 	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
-	at com.sophossolutions.www.steps.GetRestPhostosStepDefinition.validoElAlbumConIdYElTitleSea(GetRestPhostosStepDefinition.java:36)
-	at ✽.Valido el album con id 1533 y el title sea "Sit adipisci qui quibusdam quos provident eos error. Voluptas incidunt non aut consequatur."(src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:8)
-]]></failure>
-</testcase>
-<testcase classname="Ejecutar servicio de consulta Rest" name="Consultar photos por id 2" time="1.800574">
-<failure message="java.lang.AssertionError: 1 expectation failed.&#10;JSON path result.title doesn't match.&#10;Expected: A Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim.&#10;  Actual: Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim.&#10;&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;&#10;&#9;at net.serenitybdd.screenplay.Actor.should(Actor.java:301)&#13;&#10;&#9;at com.sophossolutions.www.steps.GetRestPhostosStepDefinition.validoElAlbumConIdYElTitleSea(GetRestPhostosStepDefinition.java:40)&#13;&#10;&#9;at ✽.Valido el album con id 1906 y el title sea &quot;A Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim.&quot;(src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:8)&#13;&#10;"><![CDATA[Given Necesito consultar una photo en "https://gorest.co.in/public-api/photos/".passed
-When El id de la photo es 55................................................passed
-Then Valido el album con id 1906 y el title sea "A Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim.".failed
-
-StackTrace:
-java.lang.AssertionError: 1 expectation failed.
-JSON path result.title doesn't match.
-Expected: A Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim.
-  Actual: Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim.
-
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
-	at com.sophossolutions.www.steps.GetRestPhostosStepDefinition.validoElAlbumConIdYElTitleSea(GetRestPhostosStepDefinition.java:40)
-	at ✽.Valido el album con id 1906 y el title sea "A Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim."(src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:8)
+	at com.sophossolutions.www.steps.RealizarCompraMetroStepDefinition.validoQueElProductoFueAgregadoExitosamente(RealizarCompraMetroStepDefinition.java:45)
+	at ✽.Valido que el producto fue agregado exitosamente "Videojuego Days Gone"(src/test/resources/com.sophossolutions.www.features/realizar_compra_metro.feature:7)
 ]]></failure>
 </testcase>
 </testsuite>
