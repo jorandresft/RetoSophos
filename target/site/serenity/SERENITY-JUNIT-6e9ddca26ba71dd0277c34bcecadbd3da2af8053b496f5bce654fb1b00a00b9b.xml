@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Ejecutar servicio de consulta Rest" skipped="0" tests="2" time="8.27" timestamp="2020-06-15 08:42:12"><testcase name="Consultar photos por id"><failure message="1 expectation failed.&#10;JSON path result.album_id doesn't match.&#10;Expected: 1533&#10;  Actual: 1532&#10;" type="java.lang.AssertionError">1 expectation failed.
+JSON path result.album_id doesn't match.
+Expected: 1533
+  Actual: 1532
+</failure><system-err>1 expectation failed.
+JSON path result.album_id doesn't match.
+Expected: 1533
+  Actual: 1532
+&#13;
+com.sophossolutions.www.steps.GetRestPhostosStepDefinition.validoElAlbumConIdYElTitleSea(GetRestPhostosStepDefinition.java:36)&#13;
+✽.Valido el album con id 1533 y el title sea "Sit adipisci qui quibusdam quos provident eos error. Voluptas incidunt non aut consequatur."(src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:8)&#13;
+</system-err></testcase></testsuite>

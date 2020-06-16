@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sophossolutions.www.runners.GetRestPhotos" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="MSI" time="0.0">
+  <properties/>
+  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@9d3291a
+Feature: Ejecutar servicio de consulta Rest
+  Yo como usuario necesito realizar una consulta de un servicio Rest
+  para validar el contenido de la respuesta
+
+  Scenario Outline: Consultar photos por id # src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:5
+    Given Necesito consultar una photo en <url>
+    When El id de la photo es <id>
+    Then Valido el album con id <albumId> y el title sea <title>
+
+    Examples: 
+
+  Scenario Outline: Consultar photos por id                                                                                                       # src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:12
+
+  Scenario Outline: Consultar photos por id                                                                                                  # src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:13
+
+Failed scenarios:
+src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:12 # Consultar photos por id
+src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:13 # Consultar photos por id
+
+2 Scenarios (2 failed)
+6 Steps (2 failed, 4 passed)
+0m10,526s
+
+java.lang.AssertionError: 1 expectation failed.
+JSON path result.album_id doesn't match.
+Expected: 1533
+  Actual: 1532
+
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at com.sophossolutions.www.steps.GetRestPhostosStepDefinition.validoElAlbumConIdYElTitleSea(GetRestPhostosStepDefinition.java:36)
+	at ?.Valido el album con id 1533 y el title sea "Sit adipisci qui quibusdam quos provident eos error. Voluptas incidunt non aut consequatur."(src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:8)
+
+java.lang.AssertionError: 1 expectation failed.
+JSON path result.title doesn't match.
+Expected: A Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim.
+  Actual: Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim.
+
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at com.sophossolutions.www.steps.GetRestPhostosStepDefinition.validoElAlbumConIdYElTitleSea(GetRestPhostosStepDefinition.java:40)
+	at ?.Valido el album con id 1906 y el title sea "A Omnis et amet fugit tempore suscipit esse et. Illum dolor aut nostrum deserunt enim."(src/test/resources/com.sophossolutions.www.features/get_rest_photos.feature:8)
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Ejecutar servicio de consulta Rest
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testStarted: Consultar photos por id/ejecutar-servicio-de-consulta-rest;consultar-photos-por-id
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Consultar photos por id
+-------------------------------------------------------------------(ejecutar-servicio-de-consulta-rest;consultar-photos-por-id)
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6312ee51
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7efdf514
+[pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: com.sophosolutions.www.steps
+]]></system-err>
+</testsuite>
